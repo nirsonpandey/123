@@ -1,229 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nirson </title>
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            font-family: Arial, sans-serif;
-            text-decoration:none;
-        }
-        
-        
-        #navbar a {
-    text-decoration: none;
-    color: #1A1A1A;
-    margin-left: 20px;
-    padding: 5px 10px;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nirson Pandey | Portfolio</title>
   
-        }
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-
-    #nav{
-      text-align:right
+  <style>
+    :root {
+      --bg-color: #f8fafc;
+      --sidebar-bg: #ffffff;
+      --card-bg: #ffffff;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --accent-color: #0284c7;
+      --accent-hover: #0369a1;
+      --border-color: #e2e8f0;
+      --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     }
 
-
-#navbar a:hover {
-    background: #00A3FF;
-    color: white;
-   
-}
-#hero{
-    
-        border:5px solid black;
-        border-radius: 100%;
-    
-}
-.intro{
-    text-align:left;
-    padding:20px 2px 4px 5px; 
-    font-size: 25px;
-    
-    color: #0e0f0f;
-    text-shadow:
-        0 0 5px #00bfff,
-        0 0 10px #00bfff,
-        0 0 20px #00bfff,
-        0 0 40px #00bfff;
-
-}
-.introo {
-    text-align:center;
-     padding:20px 2px 4px 5px; 
-    font-size: 25px;
-    
-    color: #0e0f0f;
-    text-shadow:
-        0 0 5px #00bfff,
-        0 0 10px #00bfff,
-        0 0 20px #00bfff,
-        0 0 40px #00bfff;
-}
-#home{
-    text-align:center;
-    margin-right:5px;
-    margin-left:5px;
-    padding:10px;
-    BORDER:1px solid black;
-    width:70%;
-    font-size:25px;
-    box-shadow: 0px 5px 5px 0px rgb(211, 7, 143);
-    
-}
-.projects{
-    width:90%;
-    margin:auto;
-    text-align:center;
-    padding:100;
-}
-
-.project-container{
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
-    gap:30px;
-    margin-top:40px;
-}
-
-.project-card{
-    background:#fffeff;
-    padding:20px;
-    border-radius:15px;
-    box-shadow:0 5px 15px 0px rgb(5, 117, 145);
-    transition:.3s;
-}
-
-.project-card:hover{
-    transform:translateY(-8px);
-}
-
-.project-card h3{
-    margin-bottom:10px; 
-}
-
-.project-card p{
-    margin-bottom:15px;
-}
-
-.project-card a{
-    text-decoration:none;
-    color:#00ccd3;
-    font-weight:bold;
-}
-#know{
-    border:1px  solid black;
-    padding:10px ;
-    font-size:20px;
-    width:200px;
-    text-decoration: none;
-    box-shadow: 0px 5px 5px 0px rgb(211, 7, 143); ;
-}    
-#contacts,a{
-    padding: 5px 5px 5px ;
-    color:black;
-    text-decoration: none;
-}
-.it:hover{
-    background-color: #00bfff;
-    color:red;
-    transition:.3s;
-    transform:translateY(-8px);
-  img1{
-    -ms-flex-align: left;
-  } 
- 
-}
-    </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-</head>
-<body>
-   <header>
-    <h1>Nirson Pandey</h1>
-    <div id="nav">
-        <nav id="navbar">
-      
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-     
-    </nav>
-    </div>
-    <hr>
-   </header> 
-    
-   <center>
-    <h2 class="intro">Introduction of me (Nirson Pandey)</h2><Br><Br>
+    [data-theme="dark"] {
+      --bg-color: #0f172a;
+      --sidebar-bg: #1e293b;
+      --card-bg: #1e293b;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent-color: #38bdf8;
+      --accent-hover: #0ea5e9;
+      --border-color: #334155;
+      --shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
 
     
-       <h3 >It's me, Nirson Pandey!</h3> <br> <img src="nirson.jpg" alt="Nirson Pandey" width="400" height="400" id="hero"><br><br>
-        <p id ="home">Hello!my name is Nirson Pandey. I am a student who read in grade 10 in Nepal,Butwal. I am astudent who have interest in tech appliance and programming.I have some handfull experience in programming and I am familier with some programming language like C, C++, Python, JavaScript, HTML, CSS and some more. I have also some experience in web development and I am familier with some web development framework like Html, Css and so on. I have also some experience in database management and I am familier with some database management system like MySQL. I enjoy creating simple yet effective web solutions, continuously learning new technologies, and improving my technical skills. My goal is to grow professionally and contribute meaningfully in the technology field.
-    </p><br><br><br><br>
-    <h3 class="introo" >Thinks I know.</h4>
-   <p id="know">
-       
-        JavaScript  <br>
-         Html<br>
-        Css<br>
-        Python<br>
-        C++<br>
-        C<br>
-   </p>
-   <img src="https://miro.medium.com/1*oEO9_JEUrRJdoAFItEZVaQ.png" alt="code img" height="300px"width="300px id=img1";
-   <hr>
-
-   
-
-
-    <div class="project">
-    <h2>Projects Made by Me</h2>
-
-    <div class="project-container">
-
-        <div class="project-card">
-            <h3>1) Number Guessing Game</h3>
-            <p>I created this using HTML, CSS and JavaScript.</p>
-            <a href="noguess.html">View Project →</a>
-        </div> <br>
-
-        <div class="project-card">
-            <h3>2) Simple Calculator</h3>
-            <p>I created this using HTML, CSS and JavaScript.</p>
-            <a href="https://nirsoncalculator.netlify.app/">View Project →</a>
-        </div><br>
-
-        <div class="project-card">
-            <h3>3) Computer World</h3>
-            <p>I created this using HTML, CSS and JavaScript.</p>
-            <a href="projects/computer-world.html">View Project →</a>
-        </div><br>
-
-    </div>
-</div>
-</center>
- 
-<hr>
-    
-<section id="contacts">
-   <h2>You can contact me from different ways:</h2>
-   <br><br>
-   <p>
-    <a href="https://github.com/nirsonpandey" class="it"><i class="fab fa-github"></i>Github</a>
-  <a href="https://www.facebook.com/nirson.pandey.2025" class="it"> <i class="fab fa-facebook"></i>facebook</a>
-  <a href="https://www.instagram.com/nirson_223/?hl=en" class="it"><i class="fab fa-instagram"></i>instagram</a>
-  
-   </p>
-
-
-</section>
-
-     
-   
-</body>
-</html>
